@@ -1,0 +1,58 @@
+﻿<div class="container">
+    <h3>Add Player</h3>
+    {{message}}
+
+    <br /><br />
+    <div class="col-md-4">
+        <form name="AddPlayerForm" ng-submit="AddPlayer();" class="form-group-sm">
+            <!--this AddPlayer() function is the function of AddPlayerController-->
+
+            <div class="form-group">
+                <label for="Player.Name">Name</label>
+                <input type="text" class="form-control" ng-model="Player.Name" required />
+            </div>
+            <div class="form-group">
+                <label for="Player.Club">Club</label>
+                <input type="text" class="form-control" ng-model="Player.Club" required />
+            </div>
+            <div class="form-group">
+                <label for="Player.Country">Country</label>
+                <input type="text" class="form-control" ng-model="Player.Country" required />
+            </div>
+            <div class="form-group">
+                <label for="Player.Age">Age</label>
+                <input type="text" class="form-control" ng-model="Player.Age" required />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" ng-disabled="AddPlayerForm.$invalid" />
+            </div>
+
+
+
+            <!--<table>
+                <tr>
+                    <td>Name : </td>
+                    <td><input type="text" ng-model="Player.Name" required /></td>
+                </tr>
+                <tr>
+                    <td>Club : </td>
+                    <td><input type="text" ng-model="Player.Club" required /></td>
+                </tr>
+                <tr>
+                    <td>Country : </td>
+                    <td><input type="text" ng-model="Player.Country" required /></td>
+                </tr>
+                <tr>
+                    <td>Age : </td>
+                    <td><input type="text" ng-model="Player.Age" required /></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="submit" value="Submit" /></td>
+                </tr>
+            </table>-->
+        </form>
+
+        <br />
+        <a href="#" class="btn btn-success">Go to Player list page</a>
+    </div>
+</div>
